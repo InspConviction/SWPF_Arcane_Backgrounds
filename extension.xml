@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root version="3.3" release="5.2|CoreRPG:4">
+	<properties>
+		<name>Pathfinder for Savage Worlds Arcane Backgrounds</name>
+		<version>1.0</version>
+		<author>Havenhart</author>
+		<description>Pathfinder for Savage Worlds Arcane Backgrounds</description>
+		<ruleset>SavageWorlds,SWD</ruleset>
+	</properties>
+	<announcement text="Pathfinder for Savage Worlds Arcane Backgrounds" font="emotefont" />
+	<base>
+		<script name="PFSW_AB">
+			function onInit()
+				ArcaneManager.unregisterAll()
+				ArcaneManager.registerArcaneType("Bard", {skill = "Performance"})
+				ArcaneManager.registerArcaneType("Cleric", {skill = "Faith"})
+				ArcaneManager.registerArcaneType("Druid", {skill = "Faith"})
+				ArcaneManager.registerArcaneType("Magic", {skill = "Spellcasting"})
+				ArcaneManager.registerArcaneType("Miracles", {skill = "Faith"})
+				ArcaneManager.registerArcaneType("Monk", {skill = ""})
+				ArcaneManager.registerArcaneType("Paladin", {skill = ""})
+				ArcaneManager.registerArcaneType("Ranger", {skill = ""})
+				ArcaneManager.registerArcaneType("Sorcerer", {skill = "Spellcasting"})
+				ArcaneManager.registerArcaneType("Wizard", {skill = "Spellcasting"})
+			end
+		</script>
+	</base>
+</root>
